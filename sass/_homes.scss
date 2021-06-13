@@ -1,0 +1,7 @@
+.homes {
+    grid-column: center-start / center-end;
+    border-right: $color-grey-light-1;
+
+    display: grid;
+    grid-template-columns: repeat(6, minmax(25rem, 1fr));
+}

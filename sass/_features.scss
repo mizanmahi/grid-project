@@ -1,0 +1,31 @@
+.features {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    // grid-template-rows: repeat(3, min-content); // optional
+    grid-gap: 6rem;
+    align-items: start; // STRETCH by default
+
+    .feature {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        // align-content: start;
+
+
+        &__icon{
+            width: 5rem;
+            height: 5rem;
+            fill: $color-grey-dark-1;
+            grid-row: 1 / span 2;
+            transform: translateY(-1rem);
+            fill: $color-primary-dark;
+        }
+
+        &__text{
+            font-size: 1.8rem;
+        }
+    }
+}
